@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 public class frmCancion {
-    private JPanel jpaPrincipal;
+    public JPanel jpaPrincipal;
     private JPanel jpaIzquierdo;
     private JPanel jpaSuperior;
     private JPanel jpaDerecho;
