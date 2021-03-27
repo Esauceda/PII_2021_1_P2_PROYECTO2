@@ -59,6 +59,7 @@ public class frmEdificios {
                     String respuesta = new EdificioConexion().Insertar(edificios);
                     JOptionPane.showMessageDialog(null, "Guardado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                 }
             }
@@ -79,6 +80,7 @@ public class frmEdificios {
                     new EdificioConexion().Actualizar(edificios);
                     JOptionPane.showMessageDialog(null, "Actualizado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                 }
             }
@@ -98,6 +100,7 @@ public class frmEdificios {
                     new EdificioConexion().Eliminar(edificios);
                     JOptionPane.showMessageDialog(null, "Eliminado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e) {
                 }
             }
@@ -126,6 +129,7 @@ public class frmEdificios {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 leerDatos();
+                llenarComboCasa();
             }
         });
 

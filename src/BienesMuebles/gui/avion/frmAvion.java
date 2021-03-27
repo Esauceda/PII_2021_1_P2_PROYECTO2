@@ -64,6 +64,7 @@ public class frmAvion {
                     }
 
                     LeerDatos();
+                    LlenarComboAviones();
                 }catch (Exception exception){
                     JOptionPane.showMessageDialog(null, exception.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -90,6 +91,7 @@ public class frmAvion {
                     }
 
                     LeerDatos();
+                    LlenarComboAviones();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -117,6 +119,7 @@ public class frmAvion {
                     }
 
                     LeerDatos();
+                    LlenarComboAviones();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -148,6 +151,7 @@ public class frmAvion {
             @Override
             public void actionPerformed(ActionEvent e) {
                 LeerDatos();
+                LlenarComboAviones();
             }
         });
         btnLimpiarCasillas.addActionListener(new ActionListener() {

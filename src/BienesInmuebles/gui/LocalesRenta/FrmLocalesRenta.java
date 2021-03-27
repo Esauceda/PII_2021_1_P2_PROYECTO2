@@ -53,6 +53,7 @@ public class FrmLocalesRenta {
                     String respuesta = new LocalesRentaConexion().Insertar(localesRenta);
                     JOptionPane.showMessageDialog(null, "Guardado","Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                 }
             }
@@ -71,6 +72,7 @@ public class FrmLocalesRenta {
                     new LocalesRentaConexion().Actualizar(localesRenta);
                     JOptionPane.showMessageDialog(null, "Actualizado","Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
 
                 }
@@ -90,6 +92,7 @@ public class FrmLocalesRenta {
                     new LocalesRentaConexion().Eliminar(localesRenta);
                     JOptionPane.showMessageDialog(null, "Eliminado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
 
                 }
@@ -145,6 +148,7 @@ public class FrmLocalesRenta {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 leerDatos();
+                llenarComboCasa();
             }
         });
     }

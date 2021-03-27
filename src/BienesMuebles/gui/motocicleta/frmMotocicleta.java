@@ -68,6 +68,7 @@ public class frmMotocicleta {
                     }
 
                     LeerDatos();
+                    LlenarComboMotocicletas();
                 }catch (Exception exception){
                     JOptionPane.showMessageDialog(null, exception.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -78,6 +79,7 @@ public class frmMotocicleta {
             @Override
             public void actionPerformed(ActionEvent e) {
                 LeerDatos();
+                LlenarComboMotocicletas();
                 //-----
             }
         });
@@ -129,6 +131,7 @@ public class frmMotocicleta {
                     }
 
                     LeerDatos();
+                    LlenarComboMotocicletas();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -156,6 +159,7 @@ public class frmMotocicleta {
                     }
 
                     LeerDatos();
+                    LlenarComboMotocicletas();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }

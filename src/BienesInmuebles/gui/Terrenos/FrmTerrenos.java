@@ -57,6 +57,7 @@ public class FrmTerrenos {
                     String respuesta = new TerrenosConexion().Insertar(terrenos);
                     JOptionPane.showMessageDialog(null, "Guardado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -77,6 +78,7 @@ public class FrmTerrenos {
                     new TerrenosConexion().Actualizar(terrenos);
                     JOptionPane.showMessageDialog(null, "Actualizado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -96,6 +98,7 @@ public class FrmTerrenos {
                     new TerrenosConexion().Eliminar(terrenos);
                     JOptionPane.showMessageDialog(null, "Eliminado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -123,6 +126,7 @@ public class FrmTerrenos {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 leerDatos();
+                llenarComboCasa();
             }
         });
         btnLimpiar.addActionListener(new ActionListener() {

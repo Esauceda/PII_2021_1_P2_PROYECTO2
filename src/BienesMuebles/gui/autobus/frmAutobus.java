@@ -62,6 +62,7 @@ public class frmAutobus {
                     }
 
                     LeerDatos();
+                    LlenarComboAutobuses();
                 }catch (Exception exception){
                     JOptionPane.showMessageDialog(null, exception.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -72,6 +73,7 @@ public class frmAutobus {
             @Override
             public void actionPerformed(ActionEvent e) {
                 LeerDatos();
+                LlenarComboAutobuses();
             }
         });
         btnActualizar.addActionListener(new ActionListener() {
@@ -94,6 +96,7 @@ public class frmAutobus {
                     }
 
                     LeerDatos();
+                    LlenarComboAutobuses();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -133,6 +136,7 @@ public class frmAutobus {
                     }
 
                     LeerDatos();
+                    LlenarComboAutobuses();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }

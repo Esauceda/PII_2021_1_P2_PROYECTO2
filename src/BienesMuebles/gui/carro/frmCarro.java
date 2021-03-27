@@ -60,6 +60,7 @@ public class frmCarro {
                     }
 
                     LeerDatos();
+                    LlenarComboCarros();
                 }catch (Exception exception){
                     JOptionPane.showMessageDialog(null, exception.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -86,6 +87,7 @@ public class frmCarro {
                     }
 
                     LeerDatos();
+                    LlenarComboCarros();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -96,6 +98,7 @@ public class frmCarro {
             @Override
             public void actionPerformed(ActionEvent e) {
                 LeerDatos();
+                LlenarComboCarros();
             }
         });
         btnEliminar.addActionListener(new ActionListener() {
@@ -118,6 +121,7 @@ public class frmCarro {
                     }
 
                     LeerDatos();
+                    LlenarComboCarros();
                 }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }

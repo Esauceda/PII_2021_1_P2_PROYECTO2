@@ -60,6 +60,7 @@ public class frmCasa {
                     if (!respuesta.contains("Error")){
                         JOptionPane.showMessageDialog(null , "Guardado", "Exito", JOptionPane.INFORMATION_MESSAGE);
                         leerDatos();
+                        llenarComboCasa();
                     }
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
@@ -81,6 +82,7 @@ public class frmCasa {
                     new CasaConexion().Eliminar(casa);
                     JOptionPane.showMessageDialog(null, "Eliminado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -100,6 +102,7 @@ public class frmCasa {
                     new CasaConexion().Actualizar(casa);
                     JOptionPane.showMessageDialog(null, "Actualizado", "Exitoso", JOptionPane.INFORMATION_MESSAGE);
                     leerDatos();
+                    llenarComboCasa();
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -129,6 +132,7 @@ public class frmCasa {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 leerDatos();
+                llenarComboCasa();
             }
         });
         btnLimpiar.addActionListener(new ActionListener() {
