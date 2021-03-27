@@ -14,7 +14,7 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class FrmTerrenos {
-    private JPanel jpaPrincipal;
+    public JPanel jpaPrincipal;
     private JPanel jpaSuperior;
     private JPanel jpaInferior;
     private JPanel jpaDerecho;

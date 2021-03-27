@@ -13,7 +13,7 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class FrmLocalesRenta {
-    private JPanel jpaPrincipal;
+    public JPanel jpaPrincipal;
     private JPanel jpaIzquierdo;
     private JPanel jpaDerecho;
     private JPanel jpaInferior;

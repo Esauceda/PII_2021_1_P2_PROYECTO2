@@ -12,7 +12,7 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class frmEdificios {
-    private JPanel jpaPrincipal;
+    public JPanel jpaPrincipal;
     private JPanel jpaIzquierdo;
     private JPanel jpaSuperior;
     private JPanel jpaDerecho;
